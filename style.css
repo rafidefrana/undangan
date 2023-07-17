@@ -1,0 +1,911 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap");
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --color: #75c2f6;
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 2000px;
+  scroll-behavior: smooth;
+}
+
+.hero h1 .hero h4 .hero p {
+  text-shadow: var(--shadow);
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/dl.beatsnoop.com-hq-1318370150-9iv3VFxuwb.jpg);
+  z-index: -1;
+  background-size: cover;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 5%,
+    rgba(255, 255, 255, 0) 35%
+  );
+}
+
+/* section */
+.undangan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/Desain\ tanpa\ judul\ .png);
+  z-index: -1;
+  background-size: cover;
+}
+
+.undangan::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.1%;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 10%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.undangan {
+  position: relative;
+  min-height: 100vh;
+}
+.undangan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  background-size: cover;
+}
+
+.col1 {
+  width: 20rem;
+  height: 20rem;
+  border: 6px solid #ccc;
+  transition-duration: 600ms;
+  transition-property: transform;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.col1 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.col1 .akad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.carousel {
+  width: 100%;
+  height: 400px;
+}
+.col2 {
+  width: 20rem;
+  height: 20rem;
+  border: 6px solid #ccc;
+  margin: 0;
+  padding: 0;
+  transition-duration: 600ms;
+  transition-property: transform;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+.col2 p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col3 {
+  width: 20rem;
+  height: 20rem;
+  border: 6px solid #ccc;
+  transition-duration: 600ms;
+  transition-property: transform;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+.col3 .menu1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.col3 .resep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+.col2 p {
+  font-size: 15px;
+  font-weight: 500;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+.tgl .ltg h4 {
+  color: #7cff01;
+}
+
+.blt .bulan h4 {
+  color: #fe0000;
+}
+
+.tard {
+  backdrop-filter: blur(5px) !important;
+}
+
+.moment h4 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.headertxt h4 span {
+  color: aqua;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 3px 2px 1px black;
+}
+
+.headertxt h4 {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.headertxt p {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.headertxt p span {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.realtime-tanggal strong {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+/* animasi */
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.col1:is(:hover, :focus) {
+  transform: scale(1.1);
+  background-color: palevioletred;
+}
+
+.col2:is(:hover, :focus) {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.col3:is(:hover, :focus) {
+  transform: scale(1.1);
+  background-color: palevioletred;
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white !important;
+}
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.tgl button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  color: greenyellow;
+  overflow: hidden;
+}
+
+.blt button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  color: greenyellow;
+  overflow: hidden;
+}
+
+.waktu button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--color);
+  overflow: hidden;
+}
+
+.tgl button span {
+  position: absolute;
+  display: block;
+}
+
+.blt button span {
+  position: absolute;
+  display: block;
+}
+
+.waktu button span {
+  position: absolute;
+  display: block;
+}
+
+.buttonreal .realtimedown {
+  cursor: pointer;
+  background-color: white;
+  color: var(--pink);
+  box-shadow: var(--shadow);
+}
+
+.buttonreal .realtimedown:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  background-color: var(--pink);
+  color: white;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+}
+
+.footerHolder {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.footerName {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+/* animasi */
+.hero a:active {
+  transform: translateY(6px);
+  box-shadow: var(--shadow);
+}
+
+/* span 1 */
+button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color));
+  animation: toRight infinite 1s;
+}
+/* span 1 */
+@keyframes toRight {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--color));
+  animation: toDown infinite 1s;
+  animation-delay: 0.25s;
+}
+/* span 2 */
+@keyframes toDown {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--color));
+  animation: toLeft infinite 1s;
+  animation-delay: 0.5s;
+}
+
+@keyframes toLeft {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+/* span 4 */
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0, transparent, var(--color));
+  animation: toUp infinite 1s;
+  animation-delay: 0.75s;
+}
+/* span 4 */
+@keyframes toUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+
+/* responsive */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+  .col3 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col2 {
+    width: 20rem;
+    height: 27rem;
+    border: 6px solid #ccc;
+    margin: 0;
+    padding: 0;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col1 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col2 p {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    font-family: "Poppins", sans-serif;
+  }
+  .col2:is(:hover, :focus) {
+    transform: scale(1.1);
+    background-color: palevioletred;
+  }
+  .col1 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .headertxt h4 {
+    color: cadetblue;
+    font-weight: bold;
+  }
+
+  body {
+    background-image: none;
+  }
+  .undangan::before {
+    content: "";
+    background-image: none;
+    background-color: white;
+  }
+  .headertxt h4 span {
+    color: cadetblue;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: none;
+  }
+  .headertxt p {
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .headertxt p span {
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .col1 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .col1 .akad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .col3 .menu1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .col3 .resep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+  }
+  .moment h4 {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .realtime-tanggal strong {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  hrml {
+    font-size: 62.5%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+  .col3 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col2 {
+    width: 20rem;
+    height: 27rem;
+    border: 6px solid #ccc;
+    margin: 0;
+    padding: 0;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col1 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col2 p {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    font-family: "Poppins", sans-serif;
+  }
+  .col2:is(:hover, :focus) {
+    transform: scale(1.1);
+    background-color: palevioletred;
+  }
+  .col1 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .headertxt h4 {
+    color: cadetblue;
+    font-weight: bold;
+  }
+
+  body {
+    background-image: none;
+  }
+  .undangan::before {
+    content: "";
+    background-image: none;
+    background-color: white;
+  }
+  .headertxt h4 span {
+    color: cadetblue;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: none;
+  }
+  .headertxt p {
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .headertxt p span {
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .col1 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .col1 .akad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .col3 .menu1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .col3 .resep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+  }
+  .moment h4 {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .realtime-tanggal strong {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/pexels-photo-1109561.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+  }
+  .hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+  }
+  .hero h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+  .hero p {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+}
+/* mobile phone */
+@media (max-width: 576px) {
+  hrml {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 3px;
+  }
+  .col3 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col2 {
+    width: 20rem;
+    height: 27rem;
+    border: 6px solid #ccc;
+    margin: 0;
+    padding: 0;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .col2 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-family: "Poppins", sans-serif;
+  }
+  .col2:is(:hover, :focus) {
+    transform: scale(1.1);
+    background-color: palevioletred;
+  }
+  .col1 {
+    width: 20rem;
+    height: 24rem;
+    border: 6px solid #ccc;
+    transition-duration: 600ms;
+    transition-property: transform;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: cadetblue;
+  }
+  .headertxt h4 {
+    color: cadetblue;
+    font-weight: bold;
+  }
+
+  body {
+    background-image: none;
+  }
+  .undangan::before {
+    content: "";
+    background-image: none;
+  }
+  .headertxt h4 span {
+    color: cadetblue;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: none;
+  }
+  .headertxt p {
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .headertxt p span {
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .col1 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .col1 .akad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .col3 .menu1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .col3 .resep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+  }
+  .moment h4 {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .realtime-tanggal strong {
+    color: cadetblue;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/pexels-photo-1109561.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+  }
+  .hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+  }
+  .hero h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+  .hero p {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  .footer h1 {
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+}
